@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .result {
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+        }
+        .reportcard{
+            margin: 20px auto;
+            padding: 20px;
+            background: #8b8787;
+            width: 250px;
+            height:auto;
+            border: 1px solid;
+            text-align: center;
+            
+        }
+        table{
+
+            background:whitesmoke;
+            margin:20px auto;
+            padding: 20px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table th,td{
+            border: 1px solid;
+            padding: 10px;
+        }
+       
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="result">
+            <h1>Final Result</h1>
+            <div class="reportcard">
+                <h2>Report Card</h2>
+                <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <td>Maths</td>
+                    <td>{{maths}}</td>
+                </tr>
+                 <tr>
+                    <td>Science</th>
+                    <td>{{science}}</td>
+                </tr>
+                 <tr>
+                    <td>English</th>
+                    <td>{{english}}</td>
+                </tr>
+                 <tr>
+                    <td>Average</th>
+                    <td>{{score}}</td>
+                </tr>
+                <tr>
+                    <td>Your Result</td>
+                    <td>{{result}}</td>
+                </tr>
+                </table>
+                
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

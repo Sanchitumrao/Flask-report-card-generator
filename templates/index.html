@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main_heading{
+            text-align: center;
+            margin: 20px;
+             
+
+        }
+        .form{
+            background-color: rgb(9, 85, 26);
+            color:aliceblue;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: left;
+            width: 300px;
+            height: auto;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        #science,#maths,#english{
+            text-align: center;
+            border: none;
+            padding: 5px;
+            margin: 5px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        #submit{
+            background: rgb(194, 105, 10);
+            margin:20px 30%;
+            padding: 10px;
+            border: none;
+            font-size: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_heading">
+    <h1>Report Card Generator</h1>
+    </div>
+    <form class="form" action="/submit" method ="post">
+        <h2>Enter Marks</h2>
+        <lebel for="Science">Science</lebel>
+        <input type="text" id="science" name="science" value="0">
+        <lebel for="Maths">Maths</lebel>
+        <input type="text" id="maths" name="maths" value="0">
+        <lebel for="English">English</lebel>
+        <input type="text" id="english" name="english" value="0">
+        <input type="submit"id="submit" value="Submit">
+    </form>
+</body>
+</html>
